@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Aurora Forecast</title>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            h1 {
+                color: red;
+            }
+            
+            body {
+                background-color: #000000;
+            }
+            
+            #divDSCOVR_density_6h {
+                position: relative;
+                width: 80%;
+                height: 50%;
+                top: 0;
+                margin: auto;
+            }
+            
+            #divDSCOVR_radialSpeed_6h {
+                position: relative;
+                width: 80%;
+                height: 50%;
+                bottom: 0;
+                margin: auto;
+            }
+            
+            #divDSCOVR_mag_6h {
+                position: relative;
+                width: 80%;
+                height: 50%;
+                top: 0;
+                margin: auto;
+            }
+            
+            #divACE_EPAM_24h {
+                position: relative;
+                width: 80%;
+                height: 50%;
+                top: 0;
+                margin: auto;
+            }
+        </style>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        
+    </head>
+    <body>
+        <h1>Aurora Forecast for Germany</h1>
+        <h2>Predictions by SWPC</h2>
+        <!--<div>
+            <canvas id="wholeDiskProb"></canvas>
+        </div>
+        <div>
+            <canvas id="regionFlareProb"></canvas>
+        </div>-->
+        <div id="divDSCOVR_density_6h">
+            <canvas id="DSCOVR_density_6h"></canvas>
+        </div>
+        <div id="divDSCOVR_radialSpeed_6h">
+            <canvas id="DSCOVR_radialSpeed_6h"></canvas>
+        </div>
+        <div id="divDSCOVR_mag_6h">
+            <canvas id="DSCOVR_mag_6h"></canvas>
+        </div>
+        <div id="divACE_EPAM_24h">
+            <canvas id="ACE_EPAM_24h"></canvas>
+            <script src="DSCOVR_density_6h.js"></script>
+        </div>
+    </body>
+</html>
